@@ -1,30 +1,21 @@
 'use client'
 
 import Link from 'next/link'
-import { Link as ScrollLink } from 'react-scroll'
 import Image from 'next/image'
 
-import {
-  FcReading,
-  FcGraduationCap,
-  FcExpand,
-  FcPortraitMode,
-} from 'react-icons/fc'
+import { FcReading, FcGraduationCap, FcPortraitMode } from 'react-icons/fc'
 
 // components
 import MarkImg from './MarkImg'
 import Badge from './Badge'
 
-import SpaceBackground from './SpaceBackground'
-
 const Hero = () => {
   return (
     <section className='min-h-screen mb-70 relative py-12 xl:py-12   xl:pt-8 text-white overflow-hidden'>
       <div className='container mx-auto relative z-10'>
-        {/* ...resto de tu código igualito... */}
         <div className='flex justify-between gap-x-8 '>
           {/* text */}
-          <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
+          <div className='flex max-w-[600px] px-3 md:px-0 flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
             <div className='flex items-center justify-center lg:items-start lg:justify-start mb-2'>
               <Image
                 src='/logo.png'
@@ -50,11 +41,15 @@ const Hero = () => {
             </p>
             {/* buttons */}
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
-              <Link href='/'>
+              <a
+                href='https://docs.google.com/forms/d/e/1FAIpQLSe7-lKbIqfufxNSBLEjR6oEFiFNFUmS1P_TRwBMer-HEksqhw/viewform'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 <button className='mt-4 px-6 py-2  bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition'>
-                  ¡Inscríbete Ahora!
+                  ¡Haz tu Examen de Colocación!
                 </button>
-              </Link>
+              </a>
             </div>
 
             {/* Badges */}
@@ -66,7 +61,7 @@ const Hero = () => {
               containerStyles='absolute top-[14%] -left-[8rem]'
               icon={<FcReading />}
               endCountNum={10}
-              badgeText='Years Of Experience'
+              badgeText='Años de Experiencia'
             />
             {/* badge 2 */}
             <Badge
@@ -74,15 +69,15 @@ const Hero = () => {
               icon={<FcGraduationCap />}
               endCountText={'k'}
               endCountNum={2}
-              badgeText='Finished Projects'
+              badgeText='Estudiantes Graduados'
             />
             {/* badge 3 */}
             <Badge
               containerStyles='absolute top-[55%] -right-14'
               icon={<FcPortraitMode />}
               endCountText={'k'}
-              endCountNum={20}
-              badgeText='Happy Clients'
+              endCountNum={3}
+              badgeText='Clases Ofrecidas'
             />
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <MarkImg
@@ -91,17 +86,6 @@ const Hero = () => {
             />
           </div>
         </div>
-        {/* icon */}
-        {/* <div className='hidden lg:flex  absolute md:left-1/2 left-2/4 bottom-44 xl:top-1/5 animate-bounce'>
-          <ScrollLink
-            to='about'
-            smooth={true}
-            duration={900}
-            className='cursor-pointer'
-          >
-            <FcExpand className='text-3xl text-primary' />
-          </ScrollLink>
-        </div> */}
       </div>
     </section>
   )

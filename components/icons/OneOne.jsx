@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Astronaut() {
+export default function OneOne() {
   return (
     <div>
       <Image
-        src='/services/astronaut.svg'
-        alt='Astronaut Icon'
+        src='/services/one-one.svg'
+        alt='One-on-One Icon'
         width={130}
         height={72}
       />

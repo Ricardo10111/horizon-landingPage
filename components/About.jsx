@@ -9,32 +9,36 @@ import {
   PhoneCall,
   GraduationCap,
   Calendar,
-  Briefcase,
+  MessageCircleMore,
+  PersonStanding,
+  BookOpenCheck,
+  Handshake,
+  Plane,
 } from 'lucide-react'
 
 const infoData = [
   {
-    icon: <User2 size={20} />,
+    icon: <User2 className='text-purple-500' size={20} />,
     text: 'Brenda Vargas',
   },
   {
-    icon: <PhoneCall size={20} />,
+    icon: <PhoneCall className='text-purple-500' size={20} />,
     text: '+1 (480) 123 4567',
   },
   {
-    icon: <MailIcon size={20} />,
+    icon: <MailIcon className='text-purple-500' size={20} />,
     text: 'b.vargas@gmail.com',
   },
   {
-    icon: <Calendar size={20} />,
+    icon: <Calendar className='text-purple-500' size={20} />,
     text: 'Febrero 5, 1995',
   },
   {
-    icon: <GraduationCap size={20} />,
+    icon: <GraduationCap className='text-purple-500' size={20} />,
     text: 'English Teacher',
   },
   {
-    icon: <HomeIcon size={20} />,
+    icon: <HomeIcon className='text-purple-500' size={20} />,
     text: 'Mexico, Queretaro',
   },
 ]
@@ -45,15 +49,15 @@ const qualificationsData = [
     data: [
       {
         university: 'ESL',
-        qualification: <GraduationCap size={28} />,
+        qualification: <GraduationCap className='text-purple-400' size={40} />,
       },
       {
         university: 'Business English',
-        qualification: <GraduationCap size={28} />,
+        qualification: <Handshake className='text-purple-400' size={40} />,
       },
       {
         university: 'English for Travelers',
-        qualification: <GraduationCap size={28} />,
+        qualification: <Plane className='text-purple-400' size={40} />,
       },
     ],
   },
@@ -62,15 +66,15 @@ const qualificationsData = [
     data: [
       {
         company: 'Test Prep',
-        role: <GraduationCap size={28} />,
+        role: <BookOpenCheck className='text-purple-400' size={40} />,
       },
       {
         company: 'Conversation Fluency',
-        role: <GraduationCap size={28} />,
+        role: <MessageCircleMore className='text-purple-400' size={40} />,
       },
       {
         company: 'Kids & Adults',
-        role: <GraduationCap size={28} />,
+        role: <PersonStanding className='text-purple-400' size={40} />,
       },
     ],
   },
@@ -93,9 +97,9 @@ const About = () => {
         </h2>
         <div className='flex flex-col xl:flex-row'>
           {/* image */}
-          <div className='hidden xl:flex flex-1 relative'>
+          <div className=' xl:flex flex-1 bottom-3 left-14 md:left-60 lg:bottom-0 lg:left-0 w-[70%] md:w-[35%] justify-center items-center relative'>
             <MarkImg
-              containerStyles='w-[505px] h-[505px] bg-transparent relative'
+              containerStyles='w-[250px] h-[250px] lg:w-[505px] lg:h-[505px] bg-transparent  lg:relative'
               imgSrc='/about-photo.jpg'
             />
           </div>
@@ -103,11 +107,14 @@ const About = () => {
           <div className='flex-1'>
             <Tabs defaultValue='personal'>
               <TabsList className='w-full grid xl:grid-cols-2 xl:max-w-[520px] xl:border dark:border-none'>
-                <TabsTrigger className='w-[162px] xl:w-auto ' value='personal'>
+                <TabsTrigger
+                  className='w-[162px] xl:w-auto font-bold'
+                  value='personal'
+                >
                   Quien Soy
                 </TabsTrigger>
                 <TabsTrigger
-                  className='w-[162px] xl:w-auto'
+                  className='w-[162px] xl:w-auto font-bold'
                   value='qualifications'
                 >
                   Que Ofrezco
@@ -118,7 +125,12 @@ const About = () => {
                 {/* personal */}
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
-                    <h3 className='h3 mb-4'>Hola, soy Brenda Vargas</h3>
+                    <h3
+                      className='h3 mb-4 text-2xl font-semibold bg-gradient-to-br from-violet-500 to-indigo-500
+             bg-clip-text text-transparent'
+                    >
+                      Hola, soy Brenda Vargas
+                    </h3>
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
                       Soy profesora de inglés con una pasión por ayudar a los
                       estudiantes a alcanzar sus objetivos lingüísticos. Con más
@@ -153,8 +165,11 @@ const About = () => {
                 {/* qualifications */}
                 <TabsContent value='qualifications'>
                   <div>
-                    <h3 className='h3 mb-8 text-center xl:text-left'>
-                      My awesome Benefits
+                    <h3
+                      className='h3 mb-8 text-center xl:text-left text-2xl font-semibold bg-gradient-to-br from-violet-500 to-indigo-500
+             bg-clip-text text-transparent'
+                    >
+                      Beneficios de mis Clases
                     </h3>
                     {/* experience & education wraper */}
                     <div className='grid md:grid-cols-2 gap-y-8'>

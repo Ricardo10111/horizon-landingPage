@@ -13,11 +13,15 @@ const Cta = () => {
             ¡No pierdas la oportunidad de aprender inglés de manera efectiva y
             divertida!
           </h2>
-          <Link href='/'>
+          <a
+            href='https://docs.google.com/forms/d/e/1FAIpQLSe7-lKbIqfufxNSBLEjR6oEFiFNFUmS1P_TRwBMer-HEksqhw/viewform'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <Button className='mt-4 px-30 py-4 text-lg bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition'>
-              ¡Inscríbete Ahora!
+              ¡Haz tu Examen de Colocación!
             </Button>
-          </Link>
+          </a>
         </div>
       </div>
     </section>
