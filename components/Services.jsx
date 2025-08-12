@@ -1,4 +1,3 @@
-import { GanttChartSquare, Blocks, Gem } from 'lucide-react'
 import {
   Card,
   CardContent,

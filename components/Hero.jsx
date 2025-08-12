@@ -1,6 +1,5 @@
 'use client'
 
-import Link from 'next/link'
 import Image from 'next/image'
 
 import { FcReading, FcGraduationCap, FcPortraitMode } from 'react-icons/fc'

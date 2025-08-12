@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer'
 
 export default function FadeSection({ children, className = '', delay = 0 }) {
   const { ref, inView } = useInView({
-    triggerOnce: false, // si quieres que se repita cada vez que entras/sales
-    threshold: 0.2, // % visible para activar animación
+    triggerOnce: false,
+    threshold: 0.2,
   })
 
   return (

@@ -20,7 +20,7 @@ export default function SpaceBackground() {
     renderer.setClearAlpha(0)
     mount.appendChild(renderer.domElement)
 
-    // ===== Estrellas (igual que tu código, acortado aquí) =====
+    // Estrellas
     const starCount = 20000
     const starPositions = new Float32Array(starCount * 3)
     const starColors = new Float32Array(starCount * 3)
@@ -50,9 +50,8 @@ export default function SpaceBackground() {
     const stars = new THREE.Points(starGeom, starMat)
     scene.add(stars)
 
-    // Cometas (igual que tu código) ...
+    // Cometas
 
-    // 🔁 Resize OBSERVER: ajusta renderer y cámara SIEMPRE
     const resize = () => {
       const w = mount.clientWidth
       const h = mount.clientHeight
