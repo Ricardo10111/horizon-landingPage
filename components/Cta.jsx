@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Cta = () => {
   return (
-    <section className='h-[600px] py-4 bg-tertiary dark:bg-secondary/40'>
+    <section className='h-[500px] md:h-[600px] py-4 bg-tertiary dark:bg-secondary/40'>
       <div className='container mx-auto'>
         <div className='flex flex-col items-center'>
           <h2
