@@ -82,17 +82,21 @@ const About = () => {
   }
 
   return (
-    <section id='about' className='xl:h-[900px] pb-12 xl:py-24'>
+    <section id='about' className='min-h-screen mb-70 pb-12 xl:py-24 bg-white'>
       <div className='container mx-auto'>
-        <h2 className='section-title text-3xl mb-8 xl:mb-16 text-center mx-auto '>
+        <h2
+          className='section-title text-4xl md:text-6xl font-bold mb-8 xl:mb-16 text-center mx-auto
+             bg-gradient-to-br from-sky-500 to-indigo-500
+             bg-clip-text text-transparent'
+        >
           Acerca de Horizons
         </h2>
         <div className='flex flex-col xl:flex-row'>
           {/* image */}
           <div className='hidden xl:flex flex-1 relative'>
             <MarkImg
-              containerStyles='bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative'
-              imgSrc='/about/about-marketing.png'
+              containerStyles='w-[505px] h-[505px] bg-transparent relative'
+              imgSrc='/about-photo.jpg'
             />
           </div>
           {/* tabs */}

@@ -1,12 +1,11 @@
 'use client'
 
 import { RiFacebookFill, RiWhatsappFill } from 'react-icons/ri'
-import Facebook from './icons/Facebook'
 
 const icons = [
   {
     path: 'https://www.facebook.com/yourprofile',
-    name: <Facebook />,
+    name: <RiFacebookFill />,
   },
   {
     path: 'https://wa.me/1234567890',

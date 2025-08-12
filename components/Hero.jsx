@@ -19,21 +19,18 @@ import SpaceBackground from './SpaceBackground'
 
 const Hero = () => {
   return (
-    <section className=' py-12 xl:py-12 h-[95vh] md:h-[110vh] lg:h-[90vh] xl:pt-8 bg-no-repeat bg-bottom bg-cover dark:bg-none text-white overflow-hidden'>
-      {/* Fondo animado */}
-      <SpaceBackground />
-
+    <section className='min-h-screen mb-70 relative py-12 xl:py-12   xl:pt-8 text-white overflow-hidden'>
       <div className='container mx-auto relative z-10'>
         {/* ...resto de tu código igualito... */}
         <div className='flex justify-between gap-x-8 '>
           {/* text */}
           <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
-            <div>
+            <div className='flex items-center justify-center lg:items-start lg:justify-start mb-2'>
               <Image
                 src='/logo.png'
                 alt='Hero Image'
-                width={120}
-                height={120}
+                width={200}
+                height={200}
                 className='lg:object-cover object-center lg:w-[300px]'
               />
             </div>
@@ -95,7 +92,7 @@ const Hero = () => {
           </div>
         </div>
         {/* icon */}
-        <div className='hidden lg:flex  absolute md:left-1/2 left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
+        {/* <div className='hidden lg:flex  absolute md:left-1/2 left-2/4 bottom-44 xl:top-1/5 animate-bounce'>
           <ScrollLink
             to='about'
             smooth={true}
@@ -104,7 +101,7 @@ const Hero = () => {
           >
             <FcExpand className='text-3xl text-primary' />
           </ScrollLink>
-        </div>
+        </div> */}
       </div>
     </section>
   )
