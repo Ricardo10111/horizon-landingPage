@@ -1,0 +1,112 @@
+'use client'
+
+import Link from 'next/link'
+import { Link as ScrollLink } from 'react-scroll'
+import Image from 'next/image'
+
+import {
+  FcReading,
+  FcGraduationCap,
+  FcExpand,
+  FcPortraitMode,
+} from 'react-icons/fc'
+
+// components
+import MarkImg from './MarkImg'
+import Badge from './Badge'
+
+import SpaceBackground from './SpaceBackground'
+
+const Hero = () => {
+  return (
+    <section className=' py-12 xl:py-12 h-[95vh] md:h-[110vh] lg:h-[90vh] xl:pt-8 bg-no-repeat bg-bottom bg-cover dark:bg-none text-white overflow-hidden'>
+      {/* Fondo animado */}
+      <SpaceBackground />
+
+      <div className='container mx-auto relative z-10'>
+        {/* ...resto de tu código igualito... */}
+        <div className='flex justify-between gap-x-8 '>
+          {/* text */}
+          <div className='flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left'>
+            <div>
+              <Image
+                src='/logo.png'
+                alt='Hero Image'
+                width={120}
+                height={120}
+                className='lg:object-cover object-center lg:w-[300px]'
+              />
+            </div>
+            <div className='text-2xl md:text-4xl font-bold mb-4'>
+              Donde Tu Ingles Comenzara a Volar - Para Todas las Edades, Para
+              cualquier Nivel
+            </div>
+            <h2 className='text-xl md:text-2xl font-semibold mb-4'>
+              Aprende Ingles de Manera Divertida y Efectiva
+            </h2>
+
+            <p>
+              En nuestra escuela, ofrecemos una variedad de cursos diseñados
+              para satisfacer las necesidades de estudiantes de todas las edades
+              y niveles. Desde clases para niños hasta programas para adultos,
+              garantizamos un aprendizaje efectivo y agradable.
+            </p>
+            {/* buttons */}
+            <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
+              <Link href='/'>
+                <button className='mt-4 px-6 py-2  bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition'>
+                  ¡Inscríbete Ahora!
+                </button>
+              </Link>
+            </div>
+
+            {/* Badges */}
+          </div>
+          {/* Image */}
+          <div className='hidden xl:flex relative mt-24'>
+            {/* badge */}
+            <Badge
+              containerStyles='absolute top-[14%] -left-[8rem]'
+              icon={<FcReading />}
+              endCountNum={10}
+              badgeText='Years Of Experience'
+            />
+            {/* badge 2 */}
+            <Badge
+              containerStyles='absolute top-[70%] -left-[6rem]'
+              icon={<FcGraduationCap />}
+              endCountText={'k'}
+              endCountNum={2}
+              badgeText='Finished Projects'
+            />
+            {/* badge 3 */}
+            <Badge
+              containerStyles='absolute top-[55%] -right-14'
+              icon={<FcPortraitMode />}
+              endCountText={'k'}
+              endCountNum={20}
+              badgeText='Happy Clients'
+            />
+            <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
+            <MarkImg
+              containerStyles='bg-hero_shape w-[400px] h-[500px] bg-no-repeat relative bg-bottom'
+              imgSrc='/hero/heroImage.png'
+            />
+          </div>
+        </div>
+        {/* icon */}
+        <div className='hidden lg:flex  absolute md:left-1/2 left-2/4 bottom-44 xl:bottom-12 animate-bounce'>
+          <ScrollLink
+            to='about'
+            smooth={true}
+            duration={900}
+            className='cursor-pointer'
+          >
+            <FcExpand className='text-3xl text-primary' />
+          </ScrollLink>
+        </div>
+      </div>
+    </section>
+  )
+}
+export default Hero
