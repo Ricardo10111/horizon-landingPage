@@ -25,11 +25,11 @@ const Hero = () => {
               />
             </div>
             <div className='text-2xl md:text-4xl font-bold mb-4'>
-              Empieza tu viaje con el inglés hoy mismo.
-            </div>
-            <h2 className='text-xl md:text-2xl font-semibold mb-4'>
               ¡Haz tu examen de colocación gratis y da tu primer paso hacia la
               fluidez!
+            </div>
+            <h2 className='text-xl md:text-2xl font-semibold mb-4'>
+              Empieza tu viaje con el inglés hoy mismo.
             </h2>
 
             <p>
@@ -47,8 +47,8 @@ const Hero = () => {
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                <button className='mt-4 px-6 py-2  bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition'>
-                  ¡Haz tu Examen de Colocación!
+                <button className='mt-4 px-6 py-2  bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition hover:cursor-pointer'>
+                  Comenzar Examen de Colocación
                 </button>
               </a>
             </div>
@@ -75,7 +75,7 @@ const Hero = () => {
             <Badge
               containerStyles='absolute top-[55%] -right-14'
               icon={<FcPortraitMode />}
-              endCountText={'k'}
+              endCountText={'k+'}
               endCountNum={1}
               badgeText='Clases con Resultados'
             />

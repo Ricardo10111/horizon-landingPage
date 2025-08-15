@@ -17,8 +17,8 @@ const Cta = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Button className='mt-4 px-30 py-4 text-lg bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition'>
-              ¡Haz tu Examen de Colocación!
+            <Button className='mt-4 px-30 py-4 text-lg bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition hover:cursor-pointer'>
+              Comenzar Examen de Colocación
             </Button>
           </a>
         </div>
