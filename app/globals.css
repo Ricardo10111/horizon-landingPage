@@ -122,5 +122,13 @@
 }
 
 .badge {
-  @apply z-10 w-[200px] h-[68px] bg-linear-65 from-purple-500 to-pink-500 backdrop-blur-lg shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
+  @apply z-10 w-auto h-[68px] bg-linear-65 from-purple-500 to-pink-500 backdrop-blur-lg shadow-2xl px-10 rounded-[10px] flex items-center gap-x-4;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #000;
+  overflow-x: hidden;
 }

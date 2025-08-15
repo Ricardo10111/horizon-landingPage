@@ -15,19 +15,19 @@ const servicesData = [
     icon: <Group size={80} strokeWidth={0.8} />,
     title: 'Clases Grupales',
     description:
-      'Ofrecemos clases grupales para ayudar a los estudiantes a aprender juntos y mejorar sus habilidades lingüísticas.',
+      'Aprende junto a otros estudiantes en un ambiente colaborativo que fomenta la práctica y la interacción real.',
   },
   {
     icon: <OneOne size={72} strokeWidth={0.8} />,
-    title: 'One on One',
+    title: 'Clases personalizadas (One on One)',
     description:
-      'Ofrecemos clases personalizadas para ayudar a los estudiantes a alcanzar sus objetivos lingüísticos.',
+      'Sesiones diseñadas para tus metas específicas, avanzando a tu propio ritmo.',
   },
   {
     icon: <Personal size={72} strokeWidth={0.8} />,
     title: 'Paquetes Personalizados',
     description:
-      'Ofrecemos paquetes personalizados para satisfacer las necesidades específicas de cada estudiante.',
+      'Programas a medida según tu nivel, tiempo disponible y objetivos, desde cursos intensivos hasta clases temáticas.',
   },
 ]
 

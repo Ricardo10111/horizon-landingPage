@@ -1,4 +1,3 @@
-// components/SpaceBackground.jsx
 'use client'
 import { useRef, useEffect } from 'react'
 import * as THREE from 'three'

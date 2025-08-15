@@ -25,18 +25,20 @@ const Hero = () => {
               />
             </div>
             <div className='text-2xl md:text-4xl font-bold mb-4'>
-              Donde Tu Ingles Comenzara a Volar - Para Todas las Edades, Para
-              cualquier Nivel
+              Empieza tu viaje con el inglés hoy mismo.
             </div>
             <h2 className='text-xl md:text-2xl font-semibold mb-4'>
-              Aprende Ingles de Manera Divertida y Efectiva
+              ¡Haz tu examen de colocación gratis y da tu primer paso hacia la
+              fluidez!
             </h2>
 
             <p>
-              En nuestra escuela, ofrecemos una variedad de cursos diseñados
-              para satisfacer las necesidades de estudiantes de todas las edades
-              y niveles. Desde clases para niños hasta programas para adultos,
-              garantizamos un aprendizaje efectivo y agradable.
+              Para todas las edades, Todos los niveles. En Horizons English
+              Studio te ayudamos a alcanzar tus metas en inglés con programas
+              adaptados a tu nivel, intereses y ritmo de aprendizaje.Desde
+              divertidas clases para niños hasta programas especializados para
+              adultos, aprenderás de forma efectiva y disfrutarás cada paso del
+              camino.
             </p>
             {/* buttons */}
             <div className='flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12'>
@@ -50,33 +52,32 @@ const Hero = () => {
                 </button>
               </a>
             </div>
-
-            {/* Badges */}
           </div>
-          {/* Image */}
+
+          {/* Badges */}
           <div className='hidden xl:flex relative mt-24'>
             {/* badge */}
             <Badge
-              containerStyles='absolute top-[14%] -left-[8rem]'
+              containerStyles='absolute  top-[14%] -left-[8rem]'
               icon={<FcReading />}
-              endCountNum={10}
+              endCountNum={9}
               badgeText='Años de Experiencia'
             />
             {/* badge 2 */}
             <Badge
-              containerStyles='absolute top-[70%] -left-[6rem]'
+              containerStyles='absolute top-[70%]  -left-[6rem]'
               icon={<FcGraduationCap />}
-              endCountText={'k'}
-              endCountNum={2}
-              badgeText='Estudiantes Graduados'
+              endCountText={'+'}
+              endCountNum={100}
+              badgeText='Estudiantes Satisfechos'
             />
             {/* badge 3 */}
             <Badge
               containerStyles='absolute top-[55%] -right-14'
               icon={<FcPortraitMode />}
               endCountText={'k'}
-              endCountNum={3}
-              badgeText='Clases Ofrecidas'
+              endCountNum={1}
+              badgeText='Clases con Resultados'
             />
             <div className='bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2'></div>
             <MarkImg

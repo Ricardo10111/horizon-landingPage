@@ -10,7 +10,7 @@ const Badge = ({
 }) => {
   return (
     <div className={`badge ${containerStyles}`}>
-      <div className='text-3xl text-white '>{icon}</div>
+      <div className='text-3xl'>{icon}</div>
       <div className='flex items-center gap-x-2'>
         <div className='text-4xl leading-none font-bold text-white'>
           <CountUp end={endCountNum} delay={1} duration={4} />

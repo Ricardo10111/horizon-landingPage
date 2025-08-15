@@ -13,31 +13,27 @@ import {
   BookOpenCheck,
   Handshake,
   Plane,
+  Users,
+  UserRoundSearch,
 } from 'lucide-react'
 
 const infoData = [
   {
-    icon: <User2 className='text-purple-500' size={20} />,
+    icon: <User2 className='text-indigo-500' size={25} />,
     text: 'Brenda Vargas',
   },
+
   {
-    icon: <PhoneCall className='text-purple-500' size={20} />,
-    text: '+1 (480) 123 4567',
+    icon: <MailIcon className='text-indigo-500' size={25} />,
+    text: 'hello@horizonses.com',
   },
+
   {
-    icon: <MailIcon className='text-purple-500' size={20} />,
-    text: 'b.vargas@gmail.com',
-  },
-  {
-    icon: <Calendar className='text-purple-500' size={20} />,
-    text: 'Febrero 5, 1995',
-  },
-  {
-    icon: <GraduationCap className='text-purple-500' size={20} />,
+    icon: <GraduationCap className='text-indigo-500' size={25} />,
     text: 'English Teacher',
   },
   {
-    icon: <HomeIcon className='text-purple-500' size={20} />,
+    icon: <HomeIcon className='text-indigo-500' size={25} />,
     text: 'Mexico, Queretaro',
   },
 ]
@@ -47,16 +43,22 @@ const qualificationsData = [
     title: 'education',
     data: [
       {
-        university: 'ESL',
-        qualification: <GraduationCap className='text-purple-400' size={40} />,
+        university: 'Inglés como segunda lengua (ESL).',
+        qualification: <GraduationCap className='text-indigo-500' size={40} />,
       },
       {
-        university: 'Business English',
-        qualification: <Handshake className='text-purple-400' size={40} />,
+        university: 'Inglés para negocios ',
+        qualification: <Handshake className='text-indigo-500' size={40} />,
       },
       {
-        university: 'English for Travelers',
-        qualification: <Plane className='text-purple-400' size={40} />,
+        university: 'Inglés para viajeros',
+        qualification: <Plane className='text-indigo-500' size={40} />,
+      },
+      {
+        university: 'Preparación para entrevistas en inglés',
+        qualification: (
+          <UserRoundSearch className='text-indigo-500' size={40} />
+        ),
       },
     ],
   },
@@ -64,16 +66,20 @@ const qualificationsData = [
     title: 'experience',
     data: [
       {
-        company: 'Test Prep',
-        role: <BookOpenCheck className='text-purple-400' size={40} />,
+        company: 'Preparación para exámenes internacionales (Test Prep)',
+        role: <BookOpenCheck className='text-indigo-500' size={40} />,
       },
       {
-        company: 'Conversation Fluency',
-        role: <MessageCircleMore className='text-purple-400' size={40} />,
+        company: 'Fluidez en conversaciones.',
+        role: <MessageCircleMore className='text-indigo-500' size={40} />,
       },
       {
-        company: 'Kids & Adults',
-        role: <PersonStanding className='text-purple-400' size={40} />,
+        company: 'Programas para niños y adultos ',
+        role: <PersonStanding className='text-indigo-500' size={40} />,
+      },
+      {
+        company: 'Clases personalizadas y grupales',
+        role: <Users className='text-indigo-500' size={40} />,
       },
     ],
   },
@@ -85,21 +91,24 @@ const About = () => {
   }
 
   return (
-    <section id='about' className='min-h-screen mb-70 pb-12 xl:py-24 bg-white'>
+    <section
+      id='about'
+      className='min-h-screen mb-70 pb-12 xl:py-24 bg-linear-to-br from-white/50 to-white/90'
+    >
       <div className='container mx-auto'>
         <h2
           className='section-title text-4xl md:text-6xl font-bold mb-8 xl:mb-16 text-center mx-auto
-             bg-gradient-to-br from-sky-500 to-indigo-500
+             bg-gradient-to-br from-violet-500 to-indigo-500
              bg-clip-text text-transparent'
         >
           Acerca de Horizons
         </h2>
         <div className='flex flex-col xl:flex-row'>
           {/* image */}
-          <div className=' xl:flex flex-1 bottom-3 left-14 md:left-60 lg:bottom-0 lg:left-0 w-[70%] md:w-[35%] justify-center items-center relative'>
+          <div className=' xl:flex flex-1 bottom-3  left-14 md:left-60 lg:bottom-0 lg:left-0 w-[70%] md:w-[35%] justify-center items-center relative'>
             <MarkImg
-              containerStyles='w-[250px] h-[250px] lg:w-[505px] lg:h-[505px] bg-transparent  lg:relative'
-              imgSrc='/about-photo.jpg'
+              containerStyles='w-[250px] h-[250px]  aspect-square rounded-full lg:w-[505px] lg:h-[505px]  bg-transparent  lg:relative'
+              imgSrc='/photo-about.jpg'
             />
           </div>
           {/* tabs */}
@@ -125,7 +134,7 @@ const About = () => {
                 <TabsContent value='personal'>
                   <div className='text-center xl:text-left'>
                     <h3
-                      className='h3 mb-4 text-2xl font-semibold bg-gradient-to-br from-violet-500 to-indigo-500
+                      className='h3 mb-4 text-2xl font-bold bg-gradient-to-br from-violet-500 to-indigo-500
              bg-clip-text text-transparent'
                     >
                       Hola, soy Brenda Vargas
@@ -133,10 +142,15 @@ const About = () => {
                     <p className='subtitle max-w-xl mx-auto xl:mx-0'>
                       Soy profesora de inglés con una pasión por ayudar a los
                       estudiantes a alcanzar sus objetivos lingüísticos. Con más
-                      de 5 años de experiencia, he desarrollado un estilo de
+                      de 9 años de experiencia, he desarrollado un estilo de
                       enseñanza único que combina métodos tradicionales con
                       tecnología moderna para crear un entorno de aprendizaje
-                      atractivo y efectivo.
+                      atractivo y efectivo. Mi objetivo es que te sientas seguro
+                      comunicándote en inglés, ya sea para viajar, trabajar,
+                      aprobar un examen o simplemente disfrutar de un nuevo
+                      idioma. Creo en un aprendizaje dinámico, adaptado a tus
+                      necesidades y que te motive a seguir practicando fuera de
+                      clase.
                     </p>
                     <br />
                     {/* icons */}
@@ -165,7 +179,7 @@ const About = () => {
                 <TabsContent value='qualifications'>
                   <div>
                     <h3
-                      className='h3 mb-8 text-center xl:text-left text-2xl font-semibold bg-gradient-to-br from-violet-500 to-indigo-500
+                      className='h3 mb-8 text-center xl:text-left text-2xl font-bold bg-gradient-to-br from-violet-500 to-indigo-500
              bg-clip-text text-transparent'
                     >
                       Beneficios de mis Clases
