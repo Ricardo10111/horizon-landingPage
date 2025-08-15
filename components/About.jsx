@@ -105,7 +105,7 @@ const About = () => {
         </h2>
         <div className='flex flex-col xl:flex-row'>
           {/* image */}
-          <div className=' xl:flex flex-1 bottom-3  left-14 md:left-60 lg:bottom-0 lg:left-0 w-[70%] md:w-[35%] justify-center items-center relative'>
+          <div className=' xl:flex flex-1 bottom-3  left-20 md:left-60 lg:bottom-0 lg:left-0 w-[70%] md:w-[35%] justify-center items-center relative'>
             <MarkImg
               containerStyles='w-[250px] h-[250px]  aspect-square rounded-full lg:w-[505px] lg:h-[505px]  bg-transparent  lg:relative'
               imgSrc='/photo-about.jpg'
@@ -139,7 +139,7 @@ const About = () => {
                     >
                       Hola, soy Brenda Vargas
                     </h3>
-                    <p className='subtitle max-w-xl mx-auto xl:mx-0'>
+                    <p className='subtitle px-4 md:px-0 max-w-xl mx-auto xl:mx-0'>
                       Soy profesora de inglés con una pasión por ayudar a los
                       estudiantes a alcanzar sus objetivos lingüísticos. Con más
                       de 9 años de experiencia, he desarrollado un estilo de

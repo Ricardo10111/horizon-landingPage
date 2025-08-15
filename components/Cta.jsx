@@ -6,7 +6,7 @@ const Cta = () => {
       <div className='container mx-auto'>
         <div className='flex flex-col items-center'>
           <h2
-            className='section-title text-4xl md:text-6xl font-bold mb-8 xl:mb-40 text-center mx-auto  bg-gradient-to-br from-white/40 to-white/100
+            className='section-title text-4xl px-2 md:px-0 md:text-6xl font-bold mb-8 xl:mb-40 text-center mx-auto  bg-gradient-to-br from-white/40 to-white/100
              bg-clip-text text-transparent'
           >
             ¡No pierdas la oportunidad de aprender inglés de manera efectiva y
@@ -17,7 +17,7 @@ const Cta = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <Button className='mt-4 px-30 py-4 text-lg bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition hover:cursor-pointer'>
+            <Button className='mt-4 md:px-30 py-4 text-lg bg-linear-65 from-purple-500 to-pink-500 text-white rounded-md hover:bg-accent-hover transition hover:cursor-pointer'>
               Comenzar Examen de Colocación
             </Button>
           </a>
